@@ -1,0 +1,193 @@
+/*arrow rotation*/
+@mixin rotation0To180Deg {
+  transition:  300ms ease-in-out;
+  transform: rotate(180deg);
+}
+
+@mixin rotation180To0Deg {
+  transition:  300ms ease-in-out;
+  transform: rotate(0deg);
+}
+/*title translate*/
+@mixin translateTitle {
+  animation: translateTitle 1s cubic-bezier(1.0,-0.12,.13,1.0) forwards;
+}
+@keyframes translateTitle {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@mixin inverseTranslateTitle {
+  animation: inverseTranslateTitle 1s cubic-bezier(1.0,-0.12,.13,1.0) forwards;
+
+}
+@keyframes inverseTranslateTitle {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@mixin textRotation {
+  animation: textRotation 1s linear 
+}
+@keyframes textRotation {
+0%{
+  transform: rotateX(0deg);
+}
+100%{
+  transform: rotateX(360deg);
+}
+}
+/*   dropdown animation */
+@mixin descending {
+  animation: descending 0.3s linear forwards;
+}
+
+@keyframes descending {
+  0% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0);
+  }
+}
+/*underline link*/
+@mixin underlineLink {
+  transform: translateX(-50%);
+  animation: underlineLink 0.3s ease forwards;
+}
+
+@keyframes underlineLink {
+  to {
+    width: 100%;
+  }
+}
+/*appearence of banner title */
+@mixin fadein {
+  animation: fadein 1500ms;
+}
+@keyframes fadein {
+  0%, 14%, 28%, 42%, 60%, 85% {
+    opacity: 0;
+  }
+ 7%, 35% {
+    opacity: 0.1;
+  }
+  21%, 50%, 70% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*shake*/
+@mixin shake {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@mixin letters {
+ 
+  .letter01 {
+    animation: letters 2s ease 0000ms forwards;
+  }
+  .letter02 {
+    animation: letters 2s ease 0200ms forwards;
+  }
+  .letter03 {
+    animation: letters 2s ease 400ms forwards;
+  }
+  .letter04 {
+    animation: letters 2s ease 600ms forwards;
+  }
+  .letter05 {
+    animation: letters 2s ease 800ms forwards;
+  }
+  .letter06 {
+    animation: letters 2s ease 1000ms forwards;
+  }
+  .letter07 {
+    animation: letters 2s ease 1200ms forwards;
+  }
+  .letter08 {
+    animation: letters 2s ease 1400ms forwards;
+  }
+  .letter09 {
+    animation: letters 2s ease 1600ms forwards;
+  }
+  .letter10 {
+    animation: letters 2s ease 1800ms forwards;
+  }
+  .letter11 {
+    animation: letters 2s ease 2000ms forwards;
+  }
+}
+@keyframes letters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* scale */
+@mixin scaleLogo {
+  transform: scale3d(1.2 1.2 0.8);
+}
+/* logo rotation */
+
+@mixin logoRotate {
+  animation: logoRotate 0.4s linear 10;
+}
+
+@keyframes logoRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+/* flip text */
+@mixin flip2 {
+  animation: flip-2-ver-left-1 0.5s linear alternate ;
+
+}
+@keyframes flip2 {
+  0% {
+    transform: translateX(0) rotateY(0);
+    transform-origin: 0% 50%;
+  }
+  100% {
+    transform: translateX(-100%) rotateY(180deg);
+    transform-origin: 100% 0%;
+  }
+}

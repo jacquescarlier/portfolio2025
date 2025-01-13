@@ -1,0 +1,26 @@
+.imgProject {
+    display: flex;
+  }
+  
+  .langage-container {
+    position: relative;
+  }
+  
+  .tip {
+    position: absolute;
+    bottom: -50px; /* Ajustez la position verticale selon vos préférences */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Couleur de fond des tips */
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre des tips */
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    text-align: center;
+  }
+  
+  .langage-container:hover .tip {
+    opacity: 1; 
+  }
+  

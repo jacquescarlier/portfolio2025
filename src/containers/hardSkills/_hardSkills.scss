@@ -1,0 +1,77 @@
+.projectTitle {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+@include phone {
+  width: 90%;
+}
+  h2 {
+    width: 100%;
+
+    @include phone {
+      width: 90%;
+    }
+  }
+  .bloc {
+    width: 100%;
+    @include fadein;
+    @include letters;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+    @include phone {
+      width: 100%;
+    }
+    
+    .imgProject {
+      display: flex;
+      justify-content: center;
+      gap: 0.5em;
+      width: auto;
+      margin-top: 0.75em;
+      padding: 0.25em 1em;
+      border: solid $font-color 1px;
+      border-radius: 0.5em;
+      background-color: $font2-color;
+      opacity: 0.6;
+      transition:  opacity 0.5s ease;
+      filter: grayscale(1);
+      filter: invert(85%);
+      &:hover {
+        filter: grayscale(0);
+        opacity: 1;
+      }
+      @include phone {
+        width: 100%;
+      }
+      img {
+        height: 3em;
+        width: 3em;
+        margin: 0.5em;
+        transition:  0.3s;
+        &:hover {
+          transform: scale(1.6);
+          filter: grayscale(1);
+        }
+        @include phone {
+          height: 1.2em;
+          width: 1.2em;
+          
+          &:hover{
+            transform: scale(3);
+            z-index: 50;
+          }
+        }
+        
+      }
+    }
+  }
+}

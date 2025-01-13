@@ -1,0 +1,109 @@
+[
+	{
+		"id": "c67ab888",
+		"title": "Ohmyfood",
+		"cover": "./ohmyfood/omf1.webp",
+		"alt": "image du site de restauration Ohmyfood",
+		"pictures": [
+			"../ohmyfood/omf1.webp",
+			"../ohmyfood/omf1-1.webp",
+			"../ohmyfood/omf2.webp",
+			"../ohmyfood/omf3.webp"
+		],
+		"description": "Améliorez l'interface d'un site mobile avec des animations",
+		"project": ["https://jacquescarlier.github.io/oh_my_food_margepb/"],
+		"logos": [
+			"../langages/020-html-5.webp",
+			"../langages/Sass1.webp"
+		],
+		"learning": [
+			"SASS"
+		],
+		"tags": [
+			["https://github.com/jacquescarlier/oh_my_food_margepb"]
+		]
+	},
+	{
+		"id": "c67ab8a7",
+		"title": "Portfolio Sophie Bluel",
+		"cover": "./sophie-bluel/sb11.webp",
+		"alt": "image du site du portfolio de Sophie Bluel",
+		"pictures": [
+			"../sophie-bluel/sophie11.webp",
+			"../sophie-bluel/sophie-admin1.webp",
+			"../sophie-bluel/sophie-login1.webp",
+			"../sophie-bluel/sophie-modale1.webp",
+			"../sophie-bluel/sophie-addphoto11.webp",
+			"../sophie-bluel/sophie-addphoto21.webp"
+		],
+		"description": "Concevoir un site portfolio d'une architecte d'intérieur en javascript.",
+		"learning": [
+			"HTML",
+			"CSS",
+			"Javascript"
+		],
+		"logos": [
+			"../langages/020-html-5.webp",
+			"../langages/019-css-3.webp",
+			"../langages/Javascript1.webp"
+		],
+		"tags": [
+			["https://github.com/jacquescarlier/Architecte_P6_JCR"]
+		]
+	},
+	{
+		"id": "c67ab899",
+		"title": "Kasa",
+		"alt": "Image du site de location immobilière Kasa",
+		"cover": "./kasa/kasa1.webp",
+		"pictures": [
+			"../kasa/kasa1.webp",
+			"../kasa/kasaapropos.webp",
+			"../kasa/kasaapropos2.webp",
+			"../kasa/kasadetails1.webp",
+			"../kasa/kasadetails2.webp"
+		],
+		"description": "Créer une application web de location immobilière avec React.",
+		"project": ["https://kasa-react-et-vite.vercel.app/"],
+		"logos": [
+			"../langages/Sass1.webp",
+			"../langages/react-logopf.webp"
+		],
+		"learning": [
+			"SASS",
+			"React"
+		],
+		"tags": [
+			[ "https://github.com/jacquescarlier/kasa_React_et_Vite"]
+		]
+	},
+	{
+		"id": "c67ab4444",
+		"title": "Argent Bank",
+		"cover": "./argentbank/argentbankcover.webp",
+		"alt": "image du site de l'application bancaire ArgentBank",
+		"pictures": [
+			"../argentbank/argentbank1.webp",
+			"../argentbank/argentbank2.webp",
+			"../argentbank/argentbank3.webp",
+			"../argentbank/argentbank4.webp",
+			"../argentbank/argentbank6.webp",
+			"../argentbank/argentbank5.webp"
+		],
+		"description": "Implémentez le front-end d'une application bancaire avec React.",
+		"logos": [
+			"../langages/019-css-3.webp",
+			"../langages/react-logopf.webp",
+			"../langages/redux.webp"
+		],
+		"learning": [
+			"React",
+			"Redux",
+			"Swagger"
+		],
+		"tags": [
+			["https://github.com/jacquescarlier/ab11"]
+		]
+	}
+
+]

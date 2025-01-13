@@ -1,0 +1,113 @@
+footer {
+  width: 100%;
+  height: 209px;
+  color: $font2-color;
+  margin: 0px;
+  margin-top: 30px;
+  padding: 1em 0 2em 0;
+  @include flex-justify-items-center;
+  flex-direction: column;
+  row-gap: 25px;
+
+  @include phone {
+    gap: 0px;
+  }
+  img {
+    height: 70px;
+    width: 50px;
+    text-decoration: none;
+    border: none;
+  }
+  .contact {
+    color: $font2-color;
+
+    @include phone {
+      margin-bottom: 1em;
+    }
+  }
+
+  h2.h2contact {
+    width: 86.8%;
+  }
+
+  .socialMediaLinks {
+    display: flex;
+    gap: 57px;
+    list-style: none;
+    /*padding: 20em auto;*/
+
+    @include phone {
+      gap: 10px;
+    }
+
+    li {
+      a {
+        padding: 0;
+        background: transparent;
+        border: none;
+      }
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+  .button {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 1em auto 1.5em auto;
+    border-radius: 30px;
+    text-shadow: 0px 5px $jaune-dor, 0px 10px 10px #0003;
+    box-shadow: 0px 0px 0px 15px #e74c3c, 0px 10px 0px 15px $font2-color,
+      0px 20px 20px 15px #0003;
+    cursor: pointer;
+    border-radius: 100px 30px 100px 30px;
+    padding: 5px 10px;
+    font-size: 24px;
+    font-family: $font-main;
+    font-weight: 900;
+
+    a {
+      text-decoration: none;
+      color: $h2;
+    }
+  }
+
+  .button span {
+    margin-top: 20px;
+    transform: rotate(-3deg);
+  }
+
+  .button:hover {
+    animation: 0.8s morph ease infinite;
+  }
+
+  .button:hover span {
+    animation: 0.8s rot ease infinite;
+  }
+
+  @keyframes morph {
+    0% {
+      border-radius: 100px 30px 100px 30px;
+    }
+    50% {
+      border-radius: 30px 100px 30px 100px;
+    }
+    100% {
+      border-radius: 100px 30px 100px 30px;
+    }
+  }
+
+  @keyframes rot {
+    0% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
+}

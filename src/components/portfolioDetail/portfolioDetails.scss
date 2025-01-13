@@ -1,0 +1,97 @@
+.title {
+    @include flex-row;
+    justify-content: space-between;
+    @include nowrap;
+    width: 100%;
+    color: $jaune-dor;
+    padding: 0px 0px 20px 0px;
+    gap: 10px;
+    margin-top: 1.5em;
+  
+    @include phone {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+  }
+  
+  .titleInfo {
+    width: 100%;
+    padding: 0 0 15px 0;
+    font-family: $font-main;
+    @include tab {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-family: $font-secondary;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 51px;
+      padding-bottom: 10px;
+  
+      @include phone {
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  
+    a {
+      text-decoration: none;
+      color: $bg-color;
+      margin: 0px 10px 0px 0px;
+      background-color: $font2-color;
+      border: 2px #614b3a solid;
+      padding: 5px 55px;
+      border-radius: 20px;
+      font-size: 1.5em;
+      font-weight: bolder;
+      box-shadow: 5px 5px 5px $jaune-dor;
+  
+      &:active {
+        box-shadow: 0px 0px 0px $font2-color;
+        animation: all .5s ease;
+      }
+      @include tab {
+        font-size: 18px;
+        padding: 4px 50px;
+  
+      }
+  
+      @include phone {
+        font-size: 16px;
+        padding: 3px 25px;
+      }
+    }
+  }
+  
+  .title img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 64px;
+  
+    @include tab {
+      width: 48px;
+    }
+  
+    @include phone {
+      width: 32px;
+    }
+  }
+  
+  .portfolioInformation {
+    @include flex-row;
+    @include wrap;
+    align-items: center;
+    gap: 15px;
+  
+    a {
+      padding: 5px;
+      text-decoration: none;
+  
+      span {
+        font-size: 2em;
+      }
+    }
+  }
+  
