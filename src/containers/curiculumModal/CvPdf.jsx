@@ -14,11 +14,12 @@ const Curiculum = () => {
         <object
           data="./cv2024-1.pdf"
           type="application/pdf"
+          stanby="Patientez"
           width="100%"
           height="100%"
         >
           <p>
-            Alternative text - include a link{" "}
+            Alternative text - include a link{" cv"}
             <a href="./cv2024-1.pdf">to the PDF!</a>
           </p>
         </object>
