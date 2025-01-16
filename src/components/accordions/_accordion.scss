@@ -1,3 +1,8 @@
+@use "../../Styles/Utils/animations";
+@use "../../Styles/Utils/flex";
+@use "../../Styles/Utils/variables";
+@use "../../Styles/pages/breakpoint";
+
 .accordionSection {
   border-radius: 10px;
   padding: 0;
@@ -8,32 +13,32 @@
   gap: 76px;
   position: relative;
 
-  @include desktop {
+  @include breakpoint.desktop {
     gap: 40px;
   }
 
-  @include tab {
+  @include breakpoint.tab {
     flex-wrap: wrap;
     margin: 0px 0px 27px 0px;
     gap: 30px;
   }
 
-  @include phone {
+  @include breakpoint.phone {
     margin: 0px 1em 1em 1em;
     gap: 20px;
   }
 
   .accordionBody {
     width: 80%;
-    @include flex-column-justify-center;
+    @include flex.flex-column-justify-center;
     gap: 30px;
 
-    @include tab {
+    @include breakpoint.tab {
       width: 100%;
       gap: 25px;
     }
 
-    @include phone {
+    @include breakpoint.phone {
       gap: 20px;
     }
 
@@ -44,29 +49,29 @@
       .accordion-title {
         z-index: 2;
         height: 52px;
-        @include flex-items-center;
+        @include flex.flex-items-center;
         justify-content: space-between;
-        background-color: $font2-color;
+        background-color: variables.$font2-color;
         border-radius: 10px;
-        border-left: 1px $jaune-dor solid;
-        color: $bg-color;
+        border-left: 1px variables.$jaune-dor solid;
+        color: variables.$bg-color;
         cursor: pointer;
-        font-family: $font-secondary;
+        font-family: variables.$font-secondary;
         font-size: 1.5em;
         letter-spacing: 0.35em;
         font-weight: 700;
         padding: 10px;
-        box-shadow: 10px -2px 5px $font-color;
-        @include desktop {
+        box-shadow: 10px -2px 5px variables.$font-color;
+        @include breakpoint.desktop {
           font-size: 22px;
         }
 
-        @include tab {
+        @include breakpoint.tab {
           font-size: 20px;
           font-weight: bolder;
         }
 
-        @include phone {
+        @include breakpoint.phone {
           height: 38px;
           font-size: 16px;
           margin-bottom: 5px;
@@ -76,9 +81,9 @@
           width: 25px;
           height: 25px;
           border-radius: 50%;
-          @include rotation0To180Deg;
+          @include animations.rotation0To180Deg;
 
-          @include phone {
+          @include breakpoint.phone {
             width: 1em;
             height: 1em;
           }
@@ -88,9 +93,9 @@
           width: 25px;
           height: 25px;
           border-radius: 50%;
-          @include rotation180To0Deg;
+          @include animations.rotation180To0Deg;
 
-          @include phone {
+          @include breakpoint.phone {
             width: 1em;
             height: 1em;
           }
@@ -109,37 +114,37 @@
         z-index: 2;
         background-color: #e3e3e3;
         border-radius: 0px 0px 10px 10px;
-        border-left: 1px $jaune-dor solid;
-        border-bottom: 1px $jaune-dor solid;
-        font-family: $font-main;
-        color: $bg-color;
+        border-left: 1px variables.$jaune-dor solid;
+        border-bottom: 1px variables.$jaune-dor solid;
+        font-family: variables.$font-main;
+        color: variables.$bg-color;
         font-size: 22px;
         font-weight: 700;
         line-height: 25px;
         padding: 20px 20px 5px 20px;
         position: relative;
         top: -10px;
-        @include descending;
-        box-shadow: 10px 5px 5px $font-color;
-        @include desktop {
+        @include animations.descending;
+        box-shadow: 10px 5px 5px variables.$font-color;
+        @include breakpoint.desktop {
           font-size: 20px;
         }
 
-        @include tab {
+        @include breakpoint.tab {
           font-size: 18px;
           padding-top: 15px;
         }
 
-        @include phone {
+        @include breakpoint.phone {
           font-size: 16px;
         }
 
         ul {
           padding: 10px 0px 10px 0px;
-          @include flex-row;
+          @include flex.flex-row;
           justify-content: space-around;
 
-          @include phone {
+          @include breakpoint.phone {
             padding: 0px 0px 5px 0px;
           }
         }

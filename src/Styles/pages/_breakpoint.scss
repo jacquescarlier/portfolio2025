@@ -1,3 +1,4 @@
+@use "sass:map";
 $breakpoint: (
   "phone": 620px,
   "tab": 768px,
@@ -6,25 +7,25 @@ $breakpoint: (
 );
 
 @mixin phone {
-  @media screen and (max-width: map-get($breakpoint, phone)) {
+  @media screen and (max-width: map.get($breakpoint, phone)) {
     @content;
   }
 }
 
 @mixin tab {
-  @media screen and (max-width: map-get($breakpoint, tab)) {
+  @media screen and (max-width: map.get($breakpoint, tab)) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (max-width: map-get($breakpoint, desktop)) {
+  @media screen and (max-width: map.get($breakpoint, desktop)) {
     @content;
   }
 }
 
 @mixin desktop-large {
-  @media screen and (max-width: map-get($breakpoint, desktop-large)) {
+  @media screen and (max-width: map.get($breakpoint, desktop-large)) {
     @content;
   }
 }

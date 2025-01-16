@@ -1,5 +1,8 @@
+@use "../../Styles/Utils/variables";
+@use "../../Styles/pages/breakpoint";
+
 .contactForm {
-  @include phone {
+  @include breakpoint.phone {
     width: 100%;
     margin: 0 auto;
   }
@@ -12,7 +15,7 @@
    /* border-radius: 1em;
     margin-bottom: 1em;*/
 
-    @include phone {
+    @include breakpoint.phone {
       padding: 0.6em 0.2em;
     }
   }
@@ -20,8 +23,8 @@
   input,
   textarea {
     border: 0;
-    background-color: $fond;
-    color: $bg-color;
+    background-color: variables.$fond;
+    color: variables.$bg-color;
     outline: 0;
     padding: 1em;
     border-radius: 8px;
@@ -32,15 +35,15 @@
     resize: none;
   }
   input#input-submit {
-    @include phone {
+    @include breakpoint.phone {
       width: 90%;
       margin: 0.5em auto;
     }
   }
   #input-submit {
-    color: $bg-color;
+    color: variables.$bg-color;
     font-size: 1.5em;
-    font-family: $font-secondary;
+    font-family: variables.$font-secondary;
     font-weight: 900;
     background: #e74c3c;
     cursor: pointer;
@@ -64,7 +67,7 @@
   .left {
     margin-right: 2%;
   }
-  @include phone {
+  @include breakpoint.phone {
     .half {
       width: 100%;
       float: none;
@@ -72,7 +75,7 @@
     }
   }
   .cf {
-    @include phone {
+    @include breakpoint.phone {
       width: 90%;
       margin: 5px auto;
     }

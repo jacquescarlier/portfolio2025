@@ -1,19 +1,23 @@
+@use "../Utils/flex";
+@use "../Utils/variables";
+@use "breakpoint";
+
 .page404 {
   width: 100%;
-  @include flex-column;
-  @include flex-justify-items-center;
+  @include flex.flex-column;
+  @include flex.flex-justify-items-center;
 
   h1 {
     font-size: 258px;
     font-weight: 700;
-    color: $font-color;
+    color: variables.$font-color;
     margin: 89px 0 139px 0;
 
-    @include tab {
+    @include breakpoint.tab {
       font-size: 170px;
     }
 
-    @include phone {
+    @include breakpoint.phone {
       font-size: 96px;
       margin: 86px 0 113px 0;
     }
@@ -25,9 +29,9 @@
     margin: 0 auto;
     margin-bottom: 139px;
     text-align: center;
-    color: $font2-color;
+    color: variables.$font2-color;
 
-    @include phone {
+    @include breakpoint.phone {
       font-size: 1.5em;
       margin-bottom: 113px;
       width: 100%;

@@ -1,3 +1,7 @@
+@use "../../Styles/Utils/animations";
+@use "../../Styles/Utils/variables";
+@use "../../Styles/pages/breakpoint";
+
 .projectTitle {
   display: flex;
   flex-flow: column wrap;
@@ -7,27 +11,27 @@
   box-sizing: border-box;
   position: relative;
   margin: 0 auto;
-@include phone {
+@include breakpoint.phone {
   width: 90%;
 }
   h2 {
     width: 100%;
 
-    @include phone {
+    @include breakpoint.phone {
       width: 90%;
     }
   }
   .bloc {
     width: 100%;
-    @include fadein;
-    @include letters;
+    @include animations.fadein;
+    @include animations.letters;
   }
   .content {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     
-    @include phone {
+    @include breakpoint.phone {
       width: 100%;
     }
     
@@ -38,9 +42,9 @@
       width: auto;
       margin-top: 0.75em;
       padding: 0.25em 1em;
-      border: solid $font-color 1px;
+      border: solid variables.$font-color 1px;
       border-radius: 0.5em;
-      background-color: $font2-color;
+      background-color: variables.$font2-color;
       opacity: 0.6;
       transition:  opacity 0.5s ease;
       filter: grayscale(1);
@@ -49,7 +53,7 @@
         filter: grayscale(0);
         opacity: 1;
       }
-      @include phone {
+      @include breakpoint.phone {
         width: 100%;
       }
       img {
@@ -61,7 +65,7 @@
           transform: scale(1.6);
           filter: grayscale(1);
         }
-        @include phone {
+        @include breakpoint.phone {
           height: 1.2em;
           width: 1.2em;
           

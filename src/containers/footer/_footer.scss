@@ -1,15 +1,19 @@
+@use "../../Styles/Utils/flex";
+@use "../../Styles/Utils/variables";
+@use "../../Styles/pages/breakpoint";
+
 footer {
   width: 100%;
   height: 209px;
-  color: $font2-color;
+  color: variables.$font2-color;
   margin: 0px;
   margin-top: 30px;
   padding: 1em 0 2em 0;
-  @include flex-justify-items-center;
+  @include flex.flex-justify-items-center;
   flex-direction: column;
   row-gap: 25px;
 
-  @include phone {
+  @include breakpoint.phone {
     gap: 0px;
   }
   img {
@@ -19,9 +23,9 @@ footer {
     border: none;
   }
   .contact {
-    color: $font2-color;
+    color: variables.$font2-color;
 
-    @include phone {
+    @include breakpoint.phone {
       margin-bottom: 1em;
     }
   }
@@ -36,7 +40,7 @@ footer {
     list-style: none;
     /*padding: 20em auto;*/
 
-    @include phone {
+    @include breakpoint.phone {
       gap: 10px;
     }
 
@@ -58,19 +62,19 @@ footer {
     font-size: 1.3em;
     margin: 1em auto 1.5em auto;
     border-radius: 30px;
-    text-shadow: 0px 5px $jaune-dor, 0px 10px 10px #0003;
-    box-shadow: 0px 0px 0px 15px #e74c3c, 0px 10px 0px 15px $font2-color,
+    text-shadow: 0px 5px variables.$jaune-dor, 0px 10px 10px #0003;
+    box-shadow: 0px 0px 0px 15px #e74c3c, 0px 10px 0px 15px variables.$font2-color,
       0px 20px 20px 15px #0003;
     cursor: pointer;
     border-radius: 100px 30px 100px 30px;
     padding: 5px 10px;
     font-size: 24px;
-    font-family: $font-main;
+    font-family: variables.$font-main;
     font-weight: 900;
 
     a {
       text-decoration: none;
-      color: $h2;
+      color: variables.$h2;
     }
   }
 

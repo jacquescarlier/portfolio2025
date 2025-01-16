@@ -1,5 +1,3 @@
-import * as React from "react";
-
 const Curiculum = () => {
   const handlePrint = () => {
     window.print();
@@ -14,7 +12,6 @@ const Curiculum = () => {
         <object
           data="./cv2024-1.pdf"
           type="application/pdf"
-          stanby="Patientez"
           width="100%"
           height="100%"
         >

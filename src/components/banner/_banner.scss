@@ -1,5 +1,10 @@
+@use "../../Styles/Utils/animations";
+@use "../../Styles/Utils/flex";
+@use "../../Styles/Utils/variables";
+@use "../../Styles/pages/breakpoint";
+
 .banner {
-  border: solid $font-color 1px;
+  border: solid variables.$font-color 1px;
   border-radius: 1.2em;
   padding: 0;
   position: relative;
@@ -16,10 +21,10 @@
    }
   }
 
-  @include phone {
+  @include breakpoint.phone {
     height: 5em;
     width: 90%;
-    background-color: $font2-color;
+    background-color: variables.$font2-color;
     filter: invert(100%);
     margin: 0 auto;
   }
@@ -31,11 +36,11 @@
     object-fit: cover;
     filter: grayscale(1);
 
-    @include tab {
+    @include breakpoint.tab {
       height: 176px;
     }
 
-    @include phone {
+    @include breakpoint.phone {
       display: none;
       background-color: red;
       padding: 1em 0.5em;
@@ -48,15 +53,15 @@
     bottom: 50%;
     transform: translatey(50%);
     margin: 0;
-    @include flex-row;
-    @include flex-justify-items-center;
+    @include flex.flex-row;
+    @include flex.flex-justify-items-center;
     gap: 5px;
-    @include fadein;
+    @include animations.fadein;
     &:hover span{
-      color: $font1;
+      color: variables.$font1;
     }
 
-    @include tab {
+    @include breakpoint.tab {
       padding: 0;
       margin: 0;
       width: 100%;
@@ -66,30 +71,30 @@
       flex-flow: column nowrap;
       align-items: flex-start;
     }
-    @include phone {
+    @include breakpoint.phone {
       width: 90%;
     }
 
     span {
       font-size: 3.2em;
-      color: $font1;
-      font-family: $font-secondary;
+      color: variables.$font1;
+      font-family: variables.$font-secondary;
       font-weight: 500;
 
-      @include desktop-large {
+      @include breakpoint.desktop-large {
         font-size: 2.6em;
       }
 
-      @include desktop {
+      @include breakpoint.desktop {
         font-size: 2em;
       }
 
-      @include tab {
+      @include breakpoint.tab {
         font-size: 1.5em;
       }
 
-      @include phone {
-        color: $bg-color;
+      @include breakpoint.phone {
+        color: variables.$bg-color;
         font-size: 0.8em;
         font-weight: 700;
         letter-spacing: 1px;

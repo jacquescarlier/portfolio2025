@@ -1,3 +1,6 @@
+@use "../../Styles/Utils/variables";
+@use "../../Styles/pages/breakpoint";
+
 .aboutTitle {
   width: 85%;
   margin: 0 auto;
@@ -7,26 +10,26 @@
   width: 100%;
   font-size: 1.2em;
   background-color: transparent;
-  color: $font1;
+  color: variables.$font1;
   padding: 15px 1em 0.5em 1em;
   margin: -10px auto 60px auto;
   border-radius: 25px;
   /*border: 2px solid $font-color;*/
-  font-family: $font-main;
+  font-family: variables.$font-main;
   font-size: 1.5em;
   font-weight: 600;
   &:hover {
-    color: $bg-color;
+    color: variables.$bg-color;
    // background-color: black;
-    border: 2px solid $neutral-color;
-    box-shadow: 5px 5px 5px $neutral-color;
+    border: 2px solid variables.$neutral-color;
+    box-shadow: 5px 5px 5px variables.$neutral-color;
   }
 
-  @include tab {
+  @include breakpoint.tab {
     width: 95%;
   }
 
-  @include phone {
+  @include breakpoint.phone {
     width: 90%;
     font-size: 0.8em;
     padding: 15px 0.2em 0.5em 0.2em;

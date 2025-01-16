@@ -1,10 +1,10 @@
 
-@import './Bases/reset';
-@import './pages/breakpoint';
-@import './Utils/variables';
-@import './Utils/flex';
-@import './Utils/animations';
-@import './Bases/setting';
+@import 'Bases/reset';
+@import 'pages/breakpoint';
+@import 'Utils/variables';
+@import 'Utils/flex';
+@import 'Utils/animations';
+@import 'Bases/setting';
 @import '../containers/header/header';
 @import '../components/banner/banner';
 @import '../containers/cardAndModal/cardModal';
@@ -15,7 +15,7 @@
 @import '../components/portfolioDetail/portfolioDetails';
 @import "../containers/hardSkills/hardSkills";
 @import "../containers/curiculumModal/cvpdf";
-@import './pages/404';
+@import 'pages/404';
 @import '../components/accordions/accordion';
 @import '../components/portfolioDropdown/portfolioDropdown';
 @import '../components/carousel/carousel';

@@ -1,3 +1,7 @@
+@use "../Utils/animations";
+@use "../Utils/variables";
+@use "../pages/breakpoint";
+
 body {
   background: #0d0d0d;
   display: flex;
@@ -6,7 +10,7 @@ body {
   margin: 0 auto;
   max-width: 2200px;
   width: 100%;
-  @include phone {
+  @include breakpoint.phone {
     padding: 0;
     margin: 0px;
     width: 100vw;
@@ -19,7 +23,7 @@ body {
     margin: 0;
     padding: 0;
 
-    @include phone {
+    @include breakpoint.phone {
       width: 100%;
     }
     .container-general {
@@ -31,15 +35,15 @@ body {
       grid-template-rows: auto 1fr auto;
       margin-bottom: 20px;
 
-      @include desktop-large {
+      @include breakpoint.desktop-large {
         padding: 10px 6.5% 0px 6.5%;
       }
 
-      @include tab {
+      @include breakpoint.tab {
         padding: 0.5em 0.8em;
       }
 
-      @include phone {
+      @include breakpoint.phone {
         padding: 0.5em 0em;
         box-sizing: content-box;
       }
@@ -60,17 +64,17 @@ body {
     h2 {
       font-size: 2em;
       text-align: center;
-      color: $font1;
-      font-family: $font-secondary;
+      color: variables.$font1;
+      font-family: variables.$font-secondary;
       font-weight: 800;
       letter-spacing: 0.6em;
       border-radius: 10px;
       padding: 0.5em 1.5em;
       
       &:hover {
-        color: $bg-color;
+        color: variables.$bg-color;
         //color: $font-color;
-        @include textRotation;
+        @include animations.textRotation;
       }
     }
   }
