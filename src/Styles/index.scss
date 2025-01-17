@@ -1,24 +1,24 @@
 
-@import 'Bases/reset';
-@import 'pages/breakpoint';
-@import 'Utils/variables';
-@import 'Utils/flex';
-@import 'Utils/animations';
-@import 'Bases/setting';
-@import '../containers/header/header';
-@import '../components/banner/banner';
-@import '../containers/cardAndModal/cardModal';
-@import '../containers/contactEmail/email';
-@import "../components/backLinks/backLinks";
-@import '../containers/footer/footer';
-@import '../containers/about/about';
-@import '../components/portfolioDetail/portfolioDetails';
-@import "../containers/hardSkills/hardSkills";
-@import "../containers/curiculumModal/cvpdf";
-@import 'pages/404';
-@import '../components/accordions/accordion';
-@import '../components/portfolioDropdown/portfolioDropdown';
-@import '../components/carousel/carousel';
-@import '../components/langagesComponents/langagesComponent';
+@use 'Bases/reset';
+@use 'pages/breakpoint' as breakpoint;
+@use 'Utils/variables' as variables;
+@use 'Utils/flex' as flex;
+@use 'Utils/animations';
+@use 'Bases/setting';
+@use '../containers/header/header';
+@use '../components/banner/banner';
+@use '../containers/cardAndModal/cardModal';
+@use '../containers/contactEmail/email';
+@use "../components/backLinks/backLinks";
+@use '../containers/footer/footer';
+@use '../containers/about/about';
+@use '../components/portfolioDetail/portfolioDetails';
+@use "../containers/hardSkills/hardSkills";
+@use "../containers/curiculumModal/cvpdf";
 
+@use '../components/accordions/accordion';
+@use '../components/portfolioDropdown/portfolioDropdown';
+@use '../components/carousel/carousel';
+@use '../components/langagesComponents/langagesComponent';
 
+@use 'pages/404' as *;

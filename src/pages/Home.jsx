@@ -1,4 +1,4 @@
-import React from "react";
+
 import Header from "../containers/header/Header";
 import Banner from "../components/banner/Banner";
 import HardSkillsContainer from "../containers/hardSkills/HardSkillsContainer";

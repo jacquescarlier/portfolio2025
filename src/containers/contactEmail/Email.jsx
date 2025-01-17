@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 import emailjs from '@emailjs/browser'
 import InputForm from '../../components/input/InputForm';
 
@@ -12,7 +12,7 @@ export default function Email() {
             'service_11i6ecf', 'template_11i6ecf', form.current, 'e7n4vc_R24IMqBV8Y'
         )
             .then((result) => {
-                alert('message sent successfully...');
+                alert('message sent successfully...', result);
                 form.current.reset();
             })
             .catch((error) => {

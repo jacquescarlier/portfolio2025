@@ -28,7 +28,7 @@
     }
 
     &:hover {
-      color: color.adjust($color: variables.$h2, $lightness: 0.9);
+      color: color.adjust($color: variables.$h2, $lightness: 90%);
     }
   }
   a.tooltip em {
