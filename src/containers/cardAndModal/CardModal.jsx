@@ -44,31 +44,31 @@ function CardModal({ projects }) {
           </div>
         ))}
         <Modal
-          ref={modalRef}
-          open={modalOpen}
-          onClose={closeModal}
-          initialFocusRef={modalRef}
-          center
-          classNames={{
-            overlayAnimationIn: "customEnterOverlayAnimation",
-            overlayAnimationOut: "customLeaveOverlayAnimation",
-            modalAnimationIn: "customEnterModalAnimation",
-            modalAnimationIn: "customEnterModalRotate",
-            modalAnimationOut: "customLeaveModalAnimation",
-          }}
-          animationDuration={800}
-        >
-          {selectedItem && (
-            <div className="modalContainer">
-              <Carousel
+    ref={modalRef}
+    open={modalOpen}
+    onClose={closeModal}
+    initialFocusRef={modalRef}
+    center
+    classNames={{
+        overlayAnimationIn: "customEnterOverlayAnimation",
+        overlayAnimationOut: "customLeaveOverlayAnimation",
+        modalAnimationIn: "customEnterModalAnimation",
+        modalAnimationIn: "customEnterModalRotate",  // Renommé ici
+        modalAnimationOut: "customLeaveModalAnimation",
+    }}
+    animationDuration={800}
+>
+    {selectedItem && (
+        <div className="modalContainer">
+            <Carousel
                 pictures={selectedItem.pictures}
                 title={selectedItem.title}
-              />
-              <PortfolioDetail
+            />
+            <PortfolioDetail
                 project={selectedItem.project}
                 title={selectedItem.title}
                 tags={selectedItem.tags}
-              />
+            />
               <PortfolioDropdown
                 description={selectedItem.description}
                 langages={selectedItem.logos}
@@ -94,9 +94,8 @@ CardModal.propTypes = {
       pictures: PropTypes.array.isRequired,
       description: PropTypes.string.isRequired,
       logos: PropTypes.array.isRequired,
-      // Ajoutez d'autres propriétés du projet si nécessaire
     })
   ).isRequired,
-};
+}
 
 export default CardModal;

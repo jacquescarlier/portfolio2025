@@ -45,7 +45,7 @@ const Accordion = ({ title, content }) => {
 
 Accordion.propTypes = {
   title: PropTypes.string.isRequired, // Déclare que 'title' est une chaîne de caractères et est requis
-  content: PropTypes.string.isRequired,
+  content: PropTypes.object.isRequired,
 };
 
 export default Accordion;

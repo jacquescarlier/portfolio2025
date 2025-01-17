@@ -18,7 +18,7 @@ const LangageComponent = ({ imgLangages }) => {
 
 
 LangageComponent.propTypes = {
-  imgLangages: PropTypes.string.isRequired, // Déclare que 'title' est une chaîne de caractères et est requis
+  imgLangages: PropTypes.array.isRequired, // Déclare que 'title' est une chaîne de caractères et est requis
   
 };
 

@@ -23,7 +23,7 @@ const PortfolioDetail = ({ project, title, tags }) => {
 }
 
 PortfolioDetail.propTypes = {
-  project: PropTypes.object.isRequired,
+ 
   title: PropTypes.string.isRequired, // Validation pour la prop 'title'
   tags: PropTypes.array.isRequired,
 };

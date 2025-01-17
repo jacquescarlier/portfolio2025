@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import ArrowRight from "../../pictures/logo/red_arrow_right1.png";
 import ArrowLeft from "../../pictures/logo/red_arrow_left1.png";
 
-const Carousel = ({ pictures, title, alt }) => {
+const Carousel = ({ pictures, title }) => {
   const pictureLength = pictures.length;
   const [currentPictureIndex, setcurrentPictureIndex] = useState(0);
   //counter display constant at  the bottom of the image "currentPictureIndex +1" because ID starts at 0
@@ -49,7 +49,7 @@ const Carousel = ({ pictures, title, alt }) => {
 Carousel.propTypes = {
   pictures: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired, // Validation pour la prop 'title',
-  alt: PropTypes.string.isRequired,
+  
 };
 
 export default Carousel;
