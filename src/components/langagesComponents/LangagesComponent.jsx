@@ -1,5 +1,5 @@
-import React from 'react';
-/*import './styles.css';*/ // Assurez-vous de créer un fichier styles.css pour définir vos styles
+import PropTypes from 'prop-types';
+
 
 const LangageComponent = ({ imgLangages }) => {
   return (
@@ -14,6 +14,12 @@ const LangageComponent = ({ imgLangages }) => {
       })}
     </div>
   );
+};
+
+
+LangageComponent.propTypes = {
+  imgLangages: PropTypes.string.isRequired, // Déclare que 'title' est une chaîne de caractères et est requis
+  
 };
 
 export default LangageComponent;

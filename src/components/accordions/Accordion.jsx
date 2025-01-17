@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import Arrow from "../../pictures/logo/arrow-down.webp";
+import PropTypes from 'prop-types';
 
 const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
@@ -40,6 +41,11 @@ const Accordion = ({ title, content }) => {
       </div>
     </div>
   );
+};
+
+Accordion.propTypes = {
+  title: PropTypes.string.isRequired, // Déclare que 'title' est une chaîne de caractères et est requis
+  content: PropTypes.string.isRequired,
 };
 
 export default Accordion;

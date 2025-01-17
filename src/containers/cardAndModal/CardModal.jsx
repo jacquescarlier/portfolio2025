@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { Modal } from 'react-responsive-modal';
 import { useState } from "react";
 import Carousel from '../../components/carousel/Carousel.jsx'
@@ -6,9 +6,10 @@ import 'react-responsive-modal/styles.css';
 import PortfolioDetail from "../../components/portfolioDetail/PortfolioDetail.jsx";
 import PortfolioDropdown from "../../components/portfolioDropdown/PortfolioDropdown.jsx";
 import "./custom-animation.css"
+import PropTypes from 'prop-types';
 
 function CardModal({ projects }) {
-
+console.log(projects)
     const [selectedItem, setSelectedItem] = useState(null);
     const [modalOpen, setModalOpen] = useState(false);
     const modalRef = useRef(null);
@@ -48,7 +49,7 @@ function CardModal({ projects }) {
                         overlayAnimationIn: 'customEnterOverlayAnimation',
                         overlayAnimationOut: 'customLeaveOverlayAnimation',
                         modalAnimationIn: 'customEnterModalAnimation',
-                        modalAnimationIn: 'customEnterModalRotate',
+                        modalAnimationRotate: 'customEnterModalRotate',
                         modalAnimationOut: 'customLeaveModalAnimation',
                     }}
                     animationDuration={800}
@@ -66,4 +67,11 @@ function CardModal({ projects }) {
         </>
     );
 }
+
+
+CardModal.propTypes = {
+  projects: PropTypes.array.isRequired, // Déclare que 'title' est une chaîne de caractères et est requis
+  
+};
+
 export default CardModal;
