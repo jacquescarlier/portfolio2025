@@ -53,7 +53,7 @@ function CardModal({ projects }) {
         overlayAnimationIn: "customEnterOverlayAnimation",
         overlayAnimationOut: "customLeaveOverlayAnimation",
         modalAnimationIn: "customEnterModalAnimation",
-        modalAnimationIn: "customEnterModalRotate",  // Renommé ici
+       
         modalAnimationOut: "customLeaveModalAnimation",
     }}
     animationDuration={800}
