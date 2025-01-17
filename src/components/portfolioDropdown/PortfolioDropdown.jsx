@@ -1,5 +1,5 @@
-import React from "react";
 import Accordion from "../accordions/Accordion";
+import PropTypes from 'prop-types';
 
 const title = ["Description", "Langages"];
 
@@ -31,4 +31,10 @@ const PortfolioDropdown = ({ description, langages }) => {
     </section>
   );
 };
+
+PortfolioDropdown.propTypes = {
+  description: PropTypes.string.isRequired,
+  langages: PropTypes.array.isRequired,
+};
+
 export default PortfolioDropdown;

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const PortfolioDetail = ({ project, title, tags }) => {
   const siteProject = project
   return (
@@ -19,4 +21,11 @@ const PortfolioDetail = ({ project, title, tags }) => {
     </section>
   )
 }
+
+PortfolioDetail.propTypes = {
+  project: PropTypes.object.isRequired,
+  title: PropTypes.string.isRequired, // Validation pour la prop 'title'
+  tags: PropTypes.array.isRequired,
+};
+
 export default PortfolioDetail; 
