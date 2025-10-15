@@ -2,8 +2,17 @@
   {
     id: 1,
     title: "Expérience",
-    content: `Après plus de 30 années dans l'industrie en tant que technicien de production, de recherche et développement, qui m'ont permis d’acquérir des compétences telles que l’organisation, l’écoute et l'apprentissage en continu de nouvelle technologie.
-    J’ai profité d'un concours de circonstance pour effectuer une reconversion professionnelle dans le développement Web, domaine qui m’intéressait depuis de nombreuses années. Je suis motivé pour apprendre de nouveaux framework, langages et m'ouvrir l'esprit à de nouvelles technologies.`,
+    content: `Après plus de 30 ans d’expérience dans l’industrie, en tant que technicien en production et en recherche & développement, j’ai cultivé des compétences clés telles que la rigueur, l’écoute active et l’adaptabilité face aux évolutions technologiques.`,
+  },
+ {
+    id: 2,
+    title: "Expérience",
+    content: `Porté par une curiosité constante et une envie d’apprendre, j’ai saisi l’opportunité d’une reconversion professionnelle pour me tourner vers un domaine qui me passionne depuis longtemps : le développement web.`,
+  },
+ {
+    id: 3,
+    title: "Expérience",
+    content: `Aujourd’hui, je suis pleinement engagé dans cette nouvelle voie. Ma motivation est intacte : apprendre de nouveaux frameworks, maîtriser de nouveaux langages et rester en veille constante sur les technologies émergentes. Prêt à relever de nouveaux défis, j’aborde cette transition avec énergie, humilité et enthousiasme.`,
   },
 
 ];
