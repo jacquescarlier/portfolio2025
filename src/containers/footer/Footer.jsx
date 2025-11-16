@@ -21,7 +21,7 @@ function Footer() {
         <ul className="socialMediaLinks">
           <li> <a href="https://github.com/jacquescarlier/" target="_blank" rel="noopener" title= " mon Github"> <img src="./images/github.webp" alt="logo github" aria-label="liens vers mon github" /> </a> </li>
           <li><a href="https://www.linkedin.com/in/jacques-carlier-9a39121bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" title=" mon Linkedin"> <img src="./images/linkedin.png" alt="logo linkedin" aria-label="liens vers mon Linkedin" /> </a></li>
-          <li><a href="https://monsite-eta.vercel.app/" target="_blank" rel="noopener" title="mon site de liens"> <img src="./images/pinguoin.png" alt="logo linkedin" aria-label="liens vers mon site de liens" /> </a></li>
+          <li><a href="hhttps://link4ne1.netlify.app/" target="_blank" rel="noopener" title="mon site de liens"> <img src="./images/pinguoin.png" alt="logo linkedin" aria-label="liens vers mon site de liens" /> </a></li>
           <li><a href="#" onClick={() => openModal()} title="Curriculum Vitae"><img src="./images/logoCV.webp" alt="logo email" id="email"  aria-label="liens vers curriculum-vitae"/></a></li>
         </ul>
         <span className="button"><a href="#top">Back To Top</a></span>
